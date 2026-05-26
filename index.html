@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra Popular - A farmácia mais barata do Brasil</title>
+    <meta name="description" content="A Ultra Popular nasceu com o propósito de oferecer saúde, economia e atendimento de qualidade para toda a família.">
+    <meta property="og:title" content="Ultra Popular - Anápolis">
+    <meta property="og:description" content="A farmácia mais barata do Brasil chegou! Saúde, economia e qualidade para você.">
+    <meta property="og:image" content="https://ultrapopularanapolis.com.br/img/2.jpeg">
+    <meta property="og:url" content="https://ultrapopularanapolis.com.br">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#e3000f',
+                            dark: '#b3000c'
+                        },
+                        secondary: '#ffcc00'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <header id="navbar" class="fixed w-full z-50 transition-transform duration-300 glass-header text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-3xl font-extrabold tracking-tighter text-white">
+                        <span class="text-white">+</span>Ultra<span class="text-secondary text-xl align-top">Popular</span>
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="hover:text-secondary transition-colors font-semibold">Início</a>
+                    <a href="#sobre" class="hover:text-secondary transition-colors font-semibold">Sobre Nós</a>
+                    <a href="#servicos" class="hover:text-secondary transition-colors font-semibold">Serviços</a>
+                    <a href="#galeria" class="hover:text-secondary transition-colors font-semibold">Galeria</a>
+                    <a href="#contato" class="hover:text-secondary transition-colors font-semibold">Contato</a>
+                </nav>
+                <div class="hidden md:flex items-center">
+                    <a href="https://wa.me/556293389147" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full font-bold flex items-center gap-2 transition-transform transform hover:scale-105 shadow-lg">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        Peça pelo WhatsApp
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-secondary focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-primary-dark shadow-xl absolute w-full">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#inicio" class="block px-3 py-2 text-white font-semibold hover:bg-primary rounded-md">Início</a>
+                <a href="#sobre" class="block px-3 py-2 text-white font-semibold hover:bg-primary rounded-md">Sobre Nós</a>
+                <a href="#servicos" class="block px-3 py-2 text-white font-semibold hover:bg-primary rounded-md">Serviços</a>
+                <a href="#galeria" class="block px-3 py-2 text-white font-semibold hover:bg-primary rounded-md">Galeria</a>
+                <a href="#contato" class="block px-3 py-2 text-white font-semibold hover:bg-primary rounded-md">Contato</a>
+                <a href="https://wa.me/556293389147" target="_blank" class="block px-3 py-2 text-green-400 font-bold hover:bg-primary rounded-md flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    Peça pelo WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="img/2.jpeg" alt="Fachada Ultra Popular" class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 bg-primary bg-opacity-70 mix-blend-multiply"></div>
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto fade-in">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 drop-shadow-lg leading-tight">
+                <span class="text-white">+</span>Ultra<span class="text-secondary">Popular</span>
+            </h1>
+            <p class="text-2xl md:text-3xl text-gray-100 font-light mb-10 drop-shadow-md">Cuidando de você!</p>
+            <a href="https://wa.me/556293389147" target="_blank" class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(34,197,94,0.4)]">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                Faça seu Pedido
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center scroll-reveal">
+            <h2 class="text-4xl font-extrabold text-primary mb-8">Sobre Nós</h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+                A Ultra Popular nasceu com o propósito de oferecer saúde, economia e atendimento de qualidade para toda a família, sempre com preços acessíveis, variedade de produtos e um atendimento próximo e de confiança. Nossa missão é cuidar de você todos os dias com praticidade, agilidade e compromisso, porque aqui você encontra a farmácia mais barata do Brasil!
+            </p>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center text-primary mb-16 scroll-reveal">Nossos Serviços</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                
+                <div class="bg-white rounded-2xl shadow-xl p-10 text-center transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl scroll-reveal">
+                    <svg class="w-16 h-16 text-primary mx-auto mb-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <g fill="currentColor"> <path fill="none" d="M0 0H24V24H0z" /> <path d="M19 2v2h-2v3c1.657 0 3 1.343 3 3v11c0 .552-.448 1-1 1H5c-.552 0-1-.448-1-1V10c0-1.657 1.343-3 3-3V4H5V2h14zm-2 7H7c-.552 0-1 .448-1 1v10h12V10c0-.552-.448-1-1-1zm-4 2v2h2v2h-2.001L13 17h-2l-.001-2H9v-2h2v-2h2zm2-7H9v3h6V4z" /> </g> </svg>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Medicamentos</h3>
+                    <p class="text-gray-600">Ampla variedade de medicamentos de referência e genéricos com o menor preço garantido.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-10 text-center transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl scroll-reveal" style="transition-delay: 100ms;">
+                    <svg class="w-16 h-16 text-primary mx-auto mb-6" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 442 442" xml:space="preserve"> <g> <path d="M231.5,50.5c0-5.79-4.71-10.5-10.5-10.5c-5.79,0-10.5,4.71-10.5,10.5S215.21,61,221,61C226.79,61,231.5,56.29,231.5,50.5z" /> <path d="M346,163.682h-60V122c0-5.522-4.478-10-10-10h-10V10c0-5.523-4.478-10-10-10h-70c-5.523,0-10,4.477-10,10v102h-10 c-5.523,0-10,4.478-10,10v41.682H96c-11.028,0-20,8.972-20,20V422c0,11.028,8.972,20,20,20h250c11.028,0,20-8.972,20-20V183.682 C366,172.653,357.028,163.682,346,163.682z M196,20h50v92h-50V20z M96,422V183.682h70c5.523,0,10-4.477,10-10V132h35v71.682h-85 c-5.523,0-10,4.478-10,10V392c0,5.522,4.477,10,10,10h190c5.522,0,10-4.478,10-10v-60.892c0-5.522-4.478-10-10-10s-10,4.478-10,10 V382H136V223.682h75V352c0,5.522,4.477,10,10,10c5.523,0,10-4.478,10-10V223.682h75V297c0,5.522,4.478,10,10,10s10-4.478,10-10 v-83.318c0-5.522-4.478-10-10-10h-85V132h35v41.682c0,5.523,4.478,10,10,10h70L346.002,422H96z" /> </g> </svg>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Perfumaria e Cosméticos</h3>
+                    <p class="text-gray-600">As melhores marcas para o seu cuidado pessoal, higiene e beleza em um só lugar.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-10 text-center transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl scroll-reveal" style="transition-delay: 200ms;">
+                    <svg class="w-16 h-16 text-primary mx-auto mb-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M19 2C19 2 21 3.2 21 6C21 8.8 19 10 19 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M17 4C17 4 18 4.6 18 6C18 7.4 17 8 17 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="currentColor" stroke-width="1.em" stroke-linecap="round"/></svg>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Atendimento Premium</h3>
+                    <p class="text-gray-600">Nossa equipe de farmacêuticos está pronta para oferecer a melhor orientação para sua saúde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center text-primary mb-16 scroll-reveal">Nossa Loja</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-xl shadow-md scroll-reveal"><img src="img/1.jpeg" alt="Interior Loja 1" class="w-full h-64 object-cover transform hover:scale-110 transition duration-500"></div>
+                <div class="overflow-hidden rounded-xl shadow-md scroll-reveal"><img src="img/2.jpeg" alt="Fachada da Loja" class="w-full h-64 object-cover transform hover:scale-110 transition duration-500"></div>
+                <div class="overflow-hidden rounded-xl shadow-md scroll-reveal"><img src="img/3.jpeg" alt="Interior Loja 3" class="w-full h-64 object-cover transform hover:scale-110 transition duration-500"></div>
+                <div class="overflow-hidden rounded-xl shadow-md scroll-reveal"><img src="img/4.jpeg" alt="Interior Loja 4" class="w-full h-64 object-cover transform hover:scale-110 transition duration-500"></div>
+                <div class="overflow-hidden rounded-xl shadow-md scroll-reveal"><img src="img/5.jpeg" alt="Produtos e Perfumaria" class="w-full h-64 object-cover transform hover:scale-110 transition duration-500"></div>
+                <div class="overflow-hidden rounded-xl shadow-md scroll-reveal"><img src="img/6.jpeg" alt="Caixa e Atendimento" class="w-full h-64 object-cover transform hover:scale-110 transition duration-500"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-24 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="bg-white p-10 rounded-2xl shadow-xl scroll-reveal">
+                    <h2 class="text-3xl font-extrabold text-primary mb-8 border-b-2 border-gray-100 pb-4">Informações de Contato</h2>
+                    
+                    <div class="space-y-6 text-gray-700">
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-1">Empresa</h4>
+                            <p class="font-medium text-lg">REDE DROGABEM LTDA</p>
+                            <p class="text-sm text-gray-500">CNPJ: 42.697.158/0001-02</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-1">Endereço</h4>
+                            <p class="font-medium">AV SAO FRANCISCO DE ASSIS, 464, LOJA 1</p>
+                            <p>Bairro: JUNDIAI</p>
+                            <p>ANAPOLIS - GO, CEP: 75.110-810</p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-1">Telefone / WhatsApp</h4>
+                            <a href="https://wa.me/556293389147" target="_blank" class="text-primary hover:text-primary-dark font-bold text-xl inline-flex items-center gap-2">
+                                (62) 9338-9147
+                            </a>
+                        </div>
+
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-1">E-mail</h4>
+                            <a href="mailto:CONTATO@LEOMEDDROGARIAS.COM" class="text-primary hover:text-primary-dark font-medium break-all">
+                                CONTATO@LEOMEDDROGARIAS.COM
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-[400px] lg:h-auto rounded-2xl overflow-hidden shadow-xl border-4 border-white scroll-reveal">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.4633785237887!2d-48.9482937!3d-16.3314059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ea39cf7d90d47%3A0x8979e2c62c26f0!2sAv.%20S%C3%A3o%20Francisco%20de%20Assis%2C%20464%20-%20Jundia%C3%AD%2C%20An%C3%A1polis%20-%20GO%2C%2075110-810!5e0!3m2!1spt-BR!2sbr!4v1716301234567!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primary-dark py-12 text-center text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-4 tracking-tighter"><span class="text-white">+</span>Ultra<span class="text-secondary">Popular</span></h2>
+            <p class="mb-2 font-medium">REDE DROGABEM LTDA - CNPJ: 42.697.158/0001-02</p>
+            <p class="text-sm text-gray-300 mb-8">&copy; 2026 Ultra Popular Anápolis. Todos os direitos reservados.</p>
+            
+            <button id="open-privacy" class="text-sm text-gray-300 hover:text-white underline decoration-gray-400 underline-offset-4 transition-colors">
+                Política de Privacidade
+            </button>
+        </div>
+    </footer>
+
+    <div id="privacyModal" class="fixed inset-0 z-[60] hidden overflow-y-auto">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:p-0">
+            <div class="fixed inset-0 transition-opacity bg-black bg-opacity-60 backdrop-blur-sm" id="close-privacy-bg"></div>
+            
+            <div class="relative inline-block w-full max-w-2xl p-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-2xl rounded-2xl">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold text-gray-900">Política de Privacidade</h3>
+                    <button id="close-privacy-btn" class="text-gray-400 hover:text-primary transition-colors focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+                
+                <div class="mt-2 text-gray-600 space-y-4 max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
+                    <p>A <strong>Ultra Popular</strong> tem o compromisso de proteger a sua privacidade. Esta Política de Privacidade descreve como tratamos as informações neste site institucional.</p>
+                    <p><strong>1. Coleta de Dados:</strong> Este é um site puramente informativo. Não coletamos dados pessoais de forma automatizada por meio de formulários em nosso site.</p>
+                    <p><strong>2. Contato via WhatsApp:</strong> Ao clicar no botão do WhatsApp, você será redirecionado para o aplicativo, onde as políticas de privacidade e termos de uso do próprio WhatsApp (Meta) se aplicam.</p>
+                    <p><strong>3. Cookies:</strong> Nosso site pode utilizar cookies básicos de navegação ou ferramentas de análise estatística anônima (como Google Analytics) para melhorar a experiência do usuário, sem identificar dados sensíveis.</p>
+                    <p><strong>4. Segurança:</strong> Adotamos medidas de segurança institucionais para proteger as informações dispostas neste domínio.</p>
+                    <p>Para dúvidas sobre nossa política ou informações empresariais, entre em contato através do e-mail <em>CONTATO@LEOMEDDROGARIAS.COM</em>.</p>
+                </div>
+                
+                <div class="mt-8 text-right">
+                    <button id="close-privacy-btn-bottom" class="bg-primary hover:bg-primary-dark text-white font-bold py-2 px-6 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                        Entendi
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
