@@ -59,3 +59,46 @@ body {
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
     background: #94a3b8; 
 }
+
+.unit-selector {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+    padding: 0.35rem;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+}
+
+.unit-option {
+    min-height: 2.75rem;
+    padding: 0.6rem 1rem;
+    border-radius: 999px;
+    color: #64748b;
+    font-weight: 800;
+    font-size: 0.92rem;
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.unit-option:hover,
+.unit-option:focus-visible {
+    color: #b3000c;
+    outline: none;
+}
+
+.unit-option.active {
+    background: #e3000f;
+    color: #ffffff;
+    box-shadow: 0 10px 24px rgba(227, 0, 15, 0.22);
+}
+
+@media (max-width: 420px) {
+    .unit-selector {
+        grid-template-columns: 1fr;
+        border-radius: 1rem;
+    }
+
+    .unit-option {
+        border-radius: 0.75rem;
+    }
+}
